@@ -41,3 +41,6 @@ jobs:
 
     - name: Test with Pytest
       run: pytest tests/  # better pytest -vv -x -s tests/
+
+    - name: Build GCP
+      run : curl -X POST https://cloudbuild.googleapis.com/v1/projects/openclassrooms-393312/triggers/test-new-trigger:webhook?key=AIzaSyAN3F7FQrNE3niaBEMh-pWi_zsHQRbMmnM&secret=yHkFeXDzrCO2758-DI_JCrPFht_8VwXm
